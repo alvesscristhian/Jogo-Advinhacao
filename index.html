@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="assets/css/styles.css"/>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Jogo de Adivinhação</h1>
+
+        <label for="nivel">Escolha o nível:</label>
+        <select id="nivel">
+            <option value="inicial" selected disabled hidden>Selecionar nivel</option>
+            <option value="facil">Fácil (1 a 10)</option>
+            <option value="medio">Médio (1 a 50)</option>
+            <option value="dificil">Difícil (1 a 100)</option>
+        </select>
+
+        <div class="jogo">
+            <input type="number" id="palpite" placeholder="Digite seu palpite" />
+            <button id="btnTentar">Tentar</button>
+        </div>
+
+        <p id="mensagem"></p>
+        <p id="tentativas"></p>
+
+        <button id="btnReiniciar">Reiniciar Jogo</button>
+
+        <p id="vitorias"></p>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
